@@ -1,0 +1,71 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2-dic-2013, 14.32.34
+    Author     : Utente
+*/
+html, body { height: 100%; margin: 0; padding: 0; background-color: #ffffff;}
+        /*.photo a { width: auto; height: auto; margin:2px; float:left; box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4); }*/
+        .photo a img {height: 75px; width:75px; border: 2px solid black;}
+        .photo { width: auto; height: auto; }
+        /*.photo.image{border-style:solid;border-width:medium;border-color:#a7cfdf;vertical-align: top;}*/
+        div.photo div {
+                float: left;
+                /*width: 50%;*/
+                }
+        #map{position: relative;top:40px;z-index:0;}
+        #photo{position: relative;top:40px;z-index:0;}
+        #photo .photo{background-color:green;}
+        #myNav{position: fixed;z-index:3;}
+        #descriptionFoursquare{font-size: medium;background-color: white;}
+        #descriptionFoursquare ul li p{ 
+        margin: 0;
+        padding: 0;
+        }
+        
+        .photoWrapper{position: relative;top:40px;z-index:0;
+            float:left;
+            width:100%; 
+            height:50%; 
+            border-top: solid black;
+            border-left:1px solid black;
+            border-right:1px solid black;
+            background-color: green;
+        }
+        
+       
+        @media (max-width: 500px) {
+          
+            #descriptionFoursquare{
+               
+                width:100%; height:auto; border:2px 1px 1px 1px solid black;
+                /*background-color: blue;*/
+                position:relative; bottom:40px;
+                border-top:2px solid black;
+            }
+            #photo{
+                width:100%; height:200%; border-top:2px solid black; 
+                background-color:green;
+                position:relative; 
+            }
+        }
+        
+        @media (min-width: 500px){
+           #descriptionFoursquare{
+              float:left;
+              width:30%; height:100%; border-right:2px solid black;
+/*              background-color: blue;*/
+              
+          }
+          #photo{
+                position:relative; top:0px;
+                float:left;
+                width:69%; height:100%; 
+                background-color:green;
+          }
+         
+        }
+
